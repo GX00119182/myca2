@@ -1,16 +1,19 @@
   <div class="container">
     <form class="form-horizontal" name="convert">
       <div class="form-group">
-        <label class="control-label col-sm-2" for="celcius">Celcius</label>
-        <div class="col-sm-10">
+        <label class="control-label col-sm-5" for="celcius">Celcius</label>
+        <div class="col-sm-20">
           <input [(ngModel)]="celcius" name="celcius" (keyup.enter)="CelToFahr()" class="form-control" placeholder="Enter a number">
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-2" for="fahrenheit">Fahrenheit</label>
-        <div class="col-sm-10">
+        <label class="control-label col-sm-5" for="fahrenheit">Fahrenheit</label>
+        <div class="col-sm-20">
           <input [(ngModel)]="fahrenheit" name="fahrenheit" (keyup.enter)="FahrToCel()" class="form-control" placeholder="Enter a number">
         </div>
       </div>
+      <div>
+      <button type="button" class="btn btn-primary" (click)="CelToFahr()">Convert</button>
+    </div>
     </form>
   </div>
