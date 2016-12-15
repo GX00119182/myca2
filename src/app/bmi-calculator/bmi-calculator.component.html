@@ -16,17 +16,17 @@
         <div class="col-sm-4"> </div>
         <label class="control-label col-sm-4" for="stone">Stone</label>
 
-        <input [(ngModel)]="stone" name="stone" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+        <input [(ngModel)]="stone" name="stone" (keyup)="PoundToKilo()" class="form-control" placeholder="Enter a number">
       </div>
       <div class="col-md-4 col-xs-4">
         <div class="col-sm-4"> </div>
         <label class="control-label col-sm-4" for="pounds">Pounds</label>
-        <input [(ngModel)]="pounds" name="pounds" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+        <input [(ngModel)]="pounds" name="pounds" (keyup)="PoundToKilo()" class="form-control" placeholder="Enter a number">
       </div>
       <div class="col-md-4 col-xs-4">
         <div class="col-sm-4"> </div>
         <label class="control-label col-sm-4" for="kilos">Kilograms</label>
-        <input [(ngModel)]="kilos" name="kilos" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+        <input [(ngModel)]="kilos" name="kilos" (keyup)="KiloToPound()" class="form-control" placeholder="Enter a number">
       </div>
     </div>
 
@@ -43,17 +43,17 @@
       <div class="col-md-4 col-xs-4">
         <div class="col-sm-4"> </div>
         <label class="control-label col-sm-4" for="feet">Feet</label>
-        <input [(ngModel)]="feet" name="feet" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+        <input [(ngModel)]="feet" name="feet" (keyup)="FeetAndInchesToMetre()" class="form-control" placeholder="Enter a number">
       </div>
       <div class="col-md-4 col-xs-4">
         <div class="col-sm-4"> </div>
         <label class="control-label col-sm-4" for="inches">Inches</label>
-        <input [(ngModel)]="inches" name="inches" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+        <input [(ngModel)]="inches" name="inches" (keyup)="FeetAndInchesToMetre()" class="form-control" placeholder="Enter a number">
       </div>
       <div class="col-md-4 col-xs-4">
         <div class="col-sm-4"> </div>
         <label class="control-label col-sm-4" for="meters">Meters</label>
-        <input [(ngModel)]="meters" name="meters" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+        <input [(ngModel)]="meters" name="meters" (keyup)="MetreToInchesAndFeet()" class="form-control" placeholder="Enter a number">
       </div>
 
     </div>
@@ -80,6 +80,7 @@
 <div class="row">
 
   <div class="text-center bmi-holder">
+    <h2>{{bmi}}</h2>
     <h2>{{bmiString}}</h2>
   </div>
  
