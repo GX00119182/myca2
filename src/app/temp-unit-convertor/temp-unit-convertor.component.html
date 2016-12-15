@@ -3,13 +3,13 @@
       <div class="form-group">
         <label class="control-label col-sm-5" for="celcius">Celcius</label>
         <div class="col-sm-10">
-          <input [(ngModel)]="celcius" name="celcius" (keyup.enter)="CelToFahr()" class="form-control" placeholder="Enter a number">
+          <input [(ngModel)]="celcius" name="celcius" (keyup)="CelToFahr()" class="form-control" placeholder="Enter a number">
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-5" for="fahrenheit">Fahrenheit</label>
         <div class="col-sm-10">
-          <input [(ngModel)]="fahrenheit" name="fahrenheit" (keyup.enter)="FahrToCel()" class="form-control" placeholder="Enter a number">
+          <input [(ngModel)]="fahrenheit" name="fahrenheit" (keyup)="FahrToCel()" class="form-control" placeholder="Enter a number">
         </div>
       </div>
       <div>

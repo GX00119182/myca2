@@ -1,3 +1,89 @@
-<p>
-  bmi-calculator works!
-</p>
+<div class="col-md-2 col-xs-2"> </div>
+<div class="col-md-8 col-xs-8 nameholder">
+
+  <div class="row">
+    <div class="col-md-4 col-xs-4"> </div>
+
+    <div class="col-md-4 col-xs-4">
+      <h2>BMI Calculator</h2>
+      <h3>Enter Your Weight</h3>
+    </div>
+    <div class="col-md-4 col-xs-4"> </div>
+  </div>
+  <form class="form-horizontal" name="convert">
+    <div class="row">
+      <div class="col-md-4 col-xs-4">
+        <div class="col-sm-4"> </div>
+        <label class="control-label col-sm-4" for="stone">Stone</label>
+
+        <input [(ngModel)]="stone" name="stone" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+      </div>
+      <div class="col-md-4 col-xs-4">
+        <div class="col-sm-4"> </div>
+        <label class="control-label col-sm-4" for="pounds">Pounds</label>
+        <input [(ngModel)]="pounds" name="pounds" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+      </div>
+      <div class="col-md-4 col-xs-4">
+        <div class="col-sm-4"> </div>
+        <label class="control-label col-sm-4" for="kilos">Kilograms</label>
+        <input [(ngModel)]="kilos" name="kilos" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-xs-4"> </div>
+
+      <div class="col-md-4 col-xs-4">
+        <h3>Enter Your Height</h3>
+      </div>
+      <div class="col-md-4 col-xs-4"> </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 col-xs-4">
+        <div class="col-sm-4"> </div>
+        <label class="control-label col-sm-4" for="feet">Feet</label>
+        <input [(ngModel)]="feet" name="feet" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+      </div>
+      <div class="col-md-4 col-xs-4">
+        <div class="col-sm-4"> </div>
+        <label class="control-label col-sm-4" for="inches">Inches</label>
+        <input [(ngModel)]="inches" name="inches" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+      </div>
+      <div class="col-md-4 col-xs-4">
+        <div class="col-sm-4"> </div>
+        <label class="control-label col-sm-4" for="meters">Meters</label>
+        <input [(ngModel)]="meters" name="meters" (keyup)="BMI()" class="form-control" placeholder="Enter a number">
+      </div>
+
+    </div>
+    <div class="row somepadding">
+      <div class="col-sm-4"> </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary center-block" (click)="BMI()">Calculate BMI</button>
+      </div>
+      <div class="col-sm-4"> </div>
+    </div>
+  </form>
+
+  <div class="row"> 
+    <div class="col-sm-12 text-center">
+    <p>Enter your weight in stone/pounds or kilograms and your height in feet/inches or meters</p>
+    </div>    
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <strong>Result:</strong>
+    </div>
+  </div>
+<div class="row">
+
+  <div class="text-center bmi-holder">
+    <h2>{{bmiString}}</h2>
+  </div>
+ 
+  
+</div>
+
+  </div>
+  
