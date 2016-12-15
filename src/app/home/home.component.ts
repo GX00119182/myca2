@@ -10,13 +10,11 @@ export class HomeComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-navigateTemp() {
+navigate() {
         this.router.navigate(["temp-unit-convertor"]);
     }
 
-navigateBMI() {
-        this.router.navigate(["bmi-calculator"]);
-    }
+
 
   ngOnInit() {
   }

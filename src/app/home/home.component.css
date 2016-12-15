@@ -1,0 +1,8 @@
+.box{
+    padding-left: 10%;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    background-color: lavender;
+    border: solid 1px silver;
+    }

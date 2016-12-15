@@ -1,19 +1,19 @@
-import { AppComponent } from './app.component';//home
+import { HomeComponent } from './home/home.component';
 import { TempUnitConvertorComponent } from './temp-unit-convertor/temp-unit-convertor.component';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
- import { HomeComponent } from './home/home.component';
+
  
 export const AppRoutes: any = [
-    { path: "", component: AppComponent },
+    { path: "", component: HomeComponent },
     { path: "temp-unit-convertor", component: TempUnitConvertorComponent },
-    { path: "bmi-calculator", component: BmiCalculatorComponent },
-    { path: "home", component: HomeComponent }
+    { path: "bmi-calculator", component: BmiCalculatorComponent }
+    
 
 ];
  
 export const AppComponents: any = [
-    AppComponent,
+    HomeComponent,
     TempUnitConvertorComponent,
     BmiCalculatorComponent,
-    HomeComponent
+ 
 ];

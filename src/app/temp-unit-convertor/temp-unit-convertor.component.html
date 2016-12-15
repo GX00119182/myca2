@@ -1,19 +1,20 @@
   <div class="container">
+    <h3>Temperature Unit Convertor</h3>
     <form class="form-horizontal" name="convert">
       <div class="form-group">
-        <label class="control-label col-sm-5" for="celcius">Celcius</label>
-        <div class="col-sm-10">
+        <label class="control-label col-sm-1" for="celcius">Celcius</label>
+        <div class="col-sm-5">
           <input [(ngModel)]="celcius" name="celcius" (keyup)="CelToFahr()" class="form-control" placeholder="Enter a number">
         </div>
       </div>
       <div class="form-group">
-        <label class="control-label col-sm-5" for="fahrenheit">Fahrenheit</label>
-        <div class="col-sm-10">
+        <label class="control-label col-sm-1" for="fahrenheit">Fahrenheit</label>
+        <div class="col-sm-5">
           <input [(ngModel)]="fahrenheit" name="fahrenheit" (keyup)="FahrToCel()" class="form-control" placeholder="Enter a number">
         </div>
       </div>
       <div>
-      <button type="button" (click)="count = count + 1" (init)="count = 0" class="btn btn-primary" (click)="CelToFahr()">Convert</button>
+      <button type="button" (click)="count = count + 1" (init)="count = 1" class="btn btn-primary" (click)="CelToFahr()">Convert</button>
     </div>
     <span>Total Conversions: {{count}}</span>
     </form>
